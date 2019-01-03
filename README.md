@@ -1,4 +1,4 @@
-# CSE 586 - Project 2
+# Distributed Systems
 Implementing a Pub/Sub messaging system, in the vein of RabbitMQ, Apache Kafka.
 
 ## Version 1

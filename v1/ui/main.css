@@ -1,0 +1,48 @@
+.code_text_area {
+    width: 100%;
+    border: 2px solid black;
+    margin: 10px 40px 10px 0px;
+}
+
+.display_area {
+    display: block;
+}
+
+.code_container {
+    margin: 5px 5px 5px 5px;
+}
+
+.output_container {
+    margin: 15px 10px 10px 10px;
+}
+
+.stdout_card {
+}
+
+.stderr_card {
+}
+.stdout_display_area_container {
+    float: left;
+    width: 50%;
+}
+
+.stdout_display_area {
+    height: 200px;
+    margin: 0px 10px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    overflow: auto;
+    font-size: 14px;
+}
+
+.stderr_display_area_container {
+    float: left;
+    width: 50%;
+}
+
+.stderr_display_area {
+    height: 200px;
+    margin: 0px 10px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    overflow: auto;
+    font-size: 14px;
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pub/Sub Publisher UI</title>
+</head>
+<body>
+{% if logs %}
+<div class="logs">
+    {{ logs.topic_broker }}
+</div>
+{% endif %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

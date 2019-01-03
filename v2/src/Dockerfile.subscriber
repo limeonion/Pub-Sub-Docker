@@ -1,0 +1,17 @@
+# our base image
+FROM alpine:3.7
+
+# install Python modules needed by the Python app
+COPY requirements.txt /app/
+COPY utils.py config.py /app/
+RUN apk add --update python py-pip python-dev python3 py3-pip
+RUN pip3 install --no-cache-dir -r /app/requirements.txt
+
+# copy files required for the app to run
+COPY subscriber.py /app/
+
+# tell the port number the container should expose
+EXPOSE 80
+
+# run the application
+CMD ["python3", "/app/subscriber.py"]
